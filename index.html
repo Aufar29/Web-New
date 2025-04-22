@@ -11,28 +11,86 @@
   <link href="https://fonts.googleapis.com/css2?family=Extenda:wght@400&display=swap" rel="stylesheet">
   <!-- Add this right before </head> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
 </head>
+
 <body>
+ 
   <header class="navbar">
-    <div class="logo">AAF</div>
+    <div class="logo" style="
+        font-size: 2rem;
+        font-weight: bold;
+        color: white;
+        animation: rotate180 2s ease-in-out infinite alternate;
+        display: inline-block;
+    ">FAHR</div>
+
     <nav>
       <ul class="nav-links">
-        <li><a href="#about">ABOUT ME</a></li>  <!-- Sesuaikan dengan ID section -->
+        <li><a href="#about">ABOUT ME</a></li>
         <li><a href="#blog">BLOG</a></li>
         <li><a href="#portfolio">PORTOFOLIO</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
-  </header>
+
+    <style>
+        @keyframes rotate180 {
+            0% { transform: rotateY(0deg); }
+            100% { transform: rotateY(180deg); }
+        }
+        
+        /* Optional: Add background to make white text more visible */
+        .navbar {
+            background-color: #333;
+            padding: 1rem 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</header>
 
   <section class="hero">
     <div class="overlay"></div>
     <div class="hero-content">
-      <p class="intro">Hey, I'm</p>
-      <h1>AUFAR ARRAHMAN FAHREZAL</h1>
-      <p class="role">JUNIOR WEB DEVELOPER</p>
+      <p class="role animate-sway">Hey, I'm</p>
+      <h1 class="animate-float">AUFAR ARRAHMAN FAHREZAL</h1>
+      <p class="role animate-sway">JUNIOR WEB DEVELOPER</p>
     </div>
   </section>
+  
+  <style>
+    /* Custom floating animation */
+    @keyframes floating {
+      0% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(10px) rotate(1deg); }
+      190% { transform: translateY(0px) rotate(0deg); }
+    }
+    
+    /* Custom sway animation */
+    @keyframes swaying {
+      0% { transform: rotate(-1deg); }
+      50% { transform: rotate(1deg); }
+      100% { transform: rotate(-1deg); }
+    }
+    
+    .animate-float {
+      animation: floating 4s ease-in-out infinite;
+    }
+    
+    .animate-sway {
+      animation: swaying 2s ease-in-out infinite;
+      display: inline-block; /* Needed for transform to work */
+    }
+
+
+
+  </style>
+
 
   <section class="about" id="about">
     <div class="about-overlay">
@@ -49,6 +107,7 @@ Di bidang Data Analytics, saya terbiasa menggunakan Python & R dalam menganalisi
 Saat ini, saya juga mencari peluang magang dan proyek kolaboratif di bidang digital marketing dan social media strategy untuk mengasah keterampilan dan memperluas pengalaman saya.
       </p>
       <p class="about-status">Junior Web Developer</p>
+    
     </div>
   </section>
   
@@ -196,7 +255,7 @@ Saat ini, saya juga mencari peluang magang dan proyek kolaboratif di bidang digi
  
   <section class="poster-ebook-section">
     <h2 class="section-title">My Creative Works</h2>
-    
+ 
     <div class="pe-container">
       <!-- Left Column - Posters -->
       <div class="poster-column">
@@ -238,7 +297,7 @@ Saat ini, saya juga mencari peluang magang dan proyek kolaboratif di bidang digi
           </div>
         </div>
       </div>
-      
+
       <!-- Right Column - eBook -->
       <div class="ebook-column">
         <div class="ebook-card">
@@ -261,15 +320,20 @@ Saat ini, saya juga mencari peluang magang dan proyek kolaboratif di bidang digi
   </section>
 
   <section class="contact" id="contact">
-    <h2 class="contact-title">Let's Connect</h2>
+    <h2 class="contact-title animate__animated animate__fadeInDown animate__delay-1s">Let's Connect</h2>
+    
     <div class="contact-info">
-      <a href="https://wa.me/6285398968394" class="contact-item" aria-label="WhatsApp"></a>
-      <a href="https://instagram.com/fhrzlaufar" class="contact-item" aria-label="Instagram"></a>
-      <a href="mailto:afekal29@gmail.com" class="contact-item" aria-label="Email"></a>
+      <a href="https://wa.me/6285398968394" class="contact-item animate__animated animate__bounceIn animate__delay-2s" aria-label="WhatsApp"></a>
+      <a href="https://instagram.com/fhrzlaufar" class="contact-item animate__animated animate__bounceIn animate__delay-3s" aria-label="Instagram"></a>
+      <a href="mailto:afekal29@gmail.com" class="contact-item animate__animated animate__bounceIn animate__delay-4s" aria-label="Email"></a>
     </div>
-  </section>
+    
+    <div class="animate__animated animate__bounceIn animate__delay-2s" 
+    style="text-align: center; margin-top: 13px;"> </a>
+    </div>
+</section>
 
-  
+
   
   <footer class="footer">
     <p>&copy; 2025 Aufar Fahrezal. All Rights Reserved.</p>

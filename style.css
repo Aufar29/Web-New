@@ -148,16 +148,16 @@
   .intro {
     font-size: 1.2em;
     font-style: italic;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
+    margin-bottom: 9px;
+    letter-spacing: 5px;
     color: #ffffff;
   }
   
   .hero-content h1 {
     font-size: 1.4em;
     font-weight: bold;
-    margin-bottom: 15px;
-    letter-spacing: 3px;
+    margin-bottom: 13px;
+    letter-spacing: 2.5px;
     line-height: 1.2;
   }
   
@@ -686,12 +686,16 @@
  
 
   /* ===== CONTACT SECTION ===== */
+
+
 .contact {
     padding: 60px 20px;
     background-color: #f4f4f4;
     font-family: 'Poppins', sans-serif;
     text-align: center;
   }
+
+  
   
   .contact-title {
     font-size: 3rem;
@@ -868,3 +872,7 @@
       height: 160px;
     }
   }
+
+
+
+  
